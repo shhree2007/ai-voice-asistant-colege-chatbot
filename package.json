@@ -1,0 +1,14 @@
+{
+  "name": "orchivoice",
+  "version": "1.0.0",
+  "description": "Orchivoice: Sarvam AI Powered Multilingual College Voice Assistant",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir frontend dev",
+    "frontend": "pnpm --dir frontend dev",
+    "server": "powershell -ExecutionPolicy Bypass -Command \"backend\\.venv\\Scripts\\python.exe backend\\src\\agent.py dev\"",
+    "backend": "powershell -ExecutionPolicy Bypass -Command \"backend\\.venv\\Scripts\\python.exe backend\\src\\agent.py dev\"",
+    "build": "pnpm --dir frontend build",
+    "test": "backend\\.venv\\Scripts\\python.exe -m pytest backend\\tests"
+  }
+}
